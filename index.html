@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyakshi's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: #F0E2D6;
+            color: black;
+            font-family: poppins, sans-serif;
+        }
+        nav{
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height : 60px;
+             background-color: #144D56;
+            
+        }
+        nav ul {
+            display : flex;
+            justify-content: space- around;
+        }
+        nav ul li {
+            list-style: none;
+            margin : 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none; /* Removes the underline */
+            color: #F0E2D6; /* Makes the links light beige/white */
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFFFFF; /* Slight hover effect */
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height : 80vh;
+            
+            
+        }
+        .firstSection Div {
+            width: 40%;
+        }
+        .firstSection .leftsection {
+            font-size: 1.5rem;
+            font-family: poppins, sans-serif;
+        }
+        .firstSection .leftsection h3 {
+            font-size: 3rem;
+            font-family: dosis, sans-serif;
+        }
+        .cta-button {
+            background-color: #144D56;
+            color: #F0E2D6;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            cursor: pointer;
+            width: max-content;
+            margin-top: 10px; /* Pushes the button down slightly */
+        }
+        .image-content {
+            position: relative;
+            width: 550px;
+            height: 380px;  
+        }
+
+        .bg-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw; /* Ensures the image fills the box without stretching */
+        }
+
+        .dev-img {
+            position: absolute;
+            bottom: -40px; /* Pulls the image down outside the background */
+            right: -20px;  /* Pulls the image right outside the background */
+            width: 250px;  /* Scaled down to look like a floating badge */
+            background-color: white; 
+            padding: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Adds a nice shadow to separate it */
+        }
+
+        
+        
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class = "left">Priyakshi's Portfolio</div>
+        <div class = "right" >
+            <ul>
+                <li><a color= "white" href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class = "firstSection">
+            <div class = "leftsection"><br>Hi there, I am
+                <br><h3>Priyakshi</h3>
+                <br>Frontend Developer
+                <br><button class = "cta-button">Discover my creations</button>
+            </div> 
+            <div class="image-content">
+                <img src="bg _image.jpg" alt="Room Background" class="bg-img">  
+                <img src="dev.png" alt="Developer Illustration" class="dev-img">
+            </div>
+             
+        </section>
+    </main>
+
+</body>
+
+</html>
