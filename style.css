@@ -74,13 +74,13 @@ nav ul li a:hover {
 }
 .image-content {
   position: relative;
-  width: 550px;
-  height: 380px;
+  width: 100px;
+  height: 200px;
 }
 
 .bg-img {
   position: absolute;
-  bottom: -16rem;
+  bottom: -14rem;
   left: 0;
   width: 100%; /* Ensures the image fills the box without stretching */
 }
@@ -88,8 +88,8 @@ nav ul li a:hover {
 .dev-img {
   position: absolute;
   bottom: -40px; /* Pulls the image down outside the background */
-  right: -20px; /* Pulls the image right outside the background */
-  width: 250px; /* Scaled down to look like a floating badge */
+  right: -10px; /* Pulls the image right outside the background */
+  width: 60%; /* Scaled down to look like a floating badge */
   background-color: white;
   padding: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a nice shadow to separate it */
