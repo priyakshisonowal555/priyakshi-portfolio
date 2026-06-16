@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="output.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body class="">
     <nav class="flex items-center justify-between px-6 h-12 bg-[#144d56]">
-        <div class = "text-4xl text-black font-bold">Priyakshi's Portfolio</div>
+        <div class = "font-medium text-4xl text-black ">Priyakshi's Portfolio</div> 
         <div class = "text-zinc-200" >
             <ul class="list-none flex justify-around gap-6">
                 <li><a href="index.html">Home</a></li>
@@ -22,22 +22,41 @@
     </nav>
 
     <div class="flex flex-col items-center jutify-around min-h-screen bg-[#27494e] min-w-full">
-        <h1 class="text-white text-6xl font-bold">Contact Me</h1>
+        <h2 class="text-white text-6xl font-bold">Contact Me</h2>
         <div class="flex items-center min-h-[70vh] bg-white text-black gap-12 rounded-xl">
             <div class="flex flex-col gap-4">
                 <div>Contact Info</div>
-                <div>Email</div>
-                <div>LinkedIn</div>
-                <div>Github</div>
+                <br><div>Email : <a href="priyakshisonowal555@gmail.com" class="underline">priyakshisonowal555@gmail.com</a></div>
+                <div>LinkedIn : <a href="https://www.linkedin.com/in/priyakshi-sonowal-38902a304/" class="underline">Link to my LinkedIn profile</a></div>
+                <div>GitHub : <a href="https://github.com/priyakshisonowal555" class="underline">Link to my GitHub profile</a></div>
             </div>
             <div>
                 <form>
-                    <div>
-                        Email
+                    <div class="w-1/2 flex flex-col items-center">
+                        <br><input
+                            type="text"
+                            placeholder="Name"
+                            class="w-[400px] h-[60px] bg-[#5e2525] rounded-tr-xs px-100 text-lg outline-none"
+                        />
                     </div>
-                    <div>
-                        Message
+                    <div class="w-1/2 flex flex-col items-center">
+                        <br><input
+                            type="email"
+                            placeholder="Email"
+                            class="w-[400px] h-[60px] bg-[#5e2525] rounded-tr-xs px-6 text-lg outline-none border-2 border-red-500"
+                        />
                     </div>
+                    <div class="w-1/2 flex flex-col items-center">
+                        <br><textarea
+                            type="text"
+                            placeholder="Message"
+                            class="w-[400px] h-[300px] bg-[#5e2525] rounded-tr-xs px-6 text-lg outline-none"
+                        ></textarea>
+                    </div>
+                    <div class="w-1/2 flex flex-col items-center">
+                        <br><button class="bg-[#11353a] text-[#f0e2d6] px-8 py-3 rounded-xs text-sm cursor-pointer w-max mt-2 font-medium">
+                                Submit
+                            </button>
                 </form>
             </div>
         </div>
