@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
 </head>
-<body>
-    <nav>
-        <div class = "left">Priyakshi's Portfolio</div>
-        <div class = "right" >
-            <ul>
+<body class="">
+    <nav class="flex items-center justify-between px-6 h-12 bg-[#144d56]">
+        <div class = "text-4xl text-black font-bold">Priyakshi's Portfolio</div>
+        <div class = "text-zinc-200" >
+            <ul class="list-none flex justify-around gap-6">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -19,12 +21,26 @@
         </div>
     </nav>
 
-    <main class="contact">
-        <section class="min-h-screen bg-[#144d56]">
-            <h1 class ="text-center text-beige text-4xl font bold mb-8">
-                CONTACT
-            </h1>
-        </section>
-    </main>
+    <div class="flex flex-col items-center jutify-around min-h-screen bg-[#27494e] min-w-full">
+        <h1 class="text-white text-6xl font-bold">Contact Me</h1>
+        <div class="flex items-center min-h-[70vh] bg-white text-black gap-12 rounded-xl">
+            <div class="flex flex-col gap-4">
+                <div>Contact Info</div>
+                <div>Email</div>
+                <div>LinkedIn</div>
+                <div>Github</div>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        Email
+                    </div>
+                    <div>
+                        Message
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

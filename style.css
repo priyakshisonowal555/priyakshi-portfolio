@@ -13,11 +13,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  background-color:transparent;
+  background-color: #144d56;
 }
 nav ul {
   display: flex;
-  justify-content: space- around;
+  justify-content: space-around;
 }
 nav ul li {
   list-style: none;
