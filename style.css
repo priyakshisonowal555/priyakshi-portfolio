@@ -13,7 +13,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  background-color: #144d56;
+  background-color:transparent;
 }
 nav ul {
   display: flex;
@@ -25,7 +25,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none; /* Removes the underline */
-  color: #f0e2d6; /* Makes the links light beige/white */
+  color: #f0e2d6; /* Makes the links light beige/white #f0e2d6   */
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
