@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Set</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5F5F5]">
+
+<section class="py-20 overflow-hidden">
+
+    <!-- Heading -->
+    <h1 class="text-center text-6xl font-bold text-[#0E4D57] mb-20">
+        SKILL SET
+    </h1>
+
+    <div class="relative max-w-7xl mx-auto">
+
+        <!-- Horizontal Line -->
+        <div class="absolute top-1/2 left-0 w-full h-[2px] bg-gray-300 -translate-y-1/2"></div>
+
+        <!-- Left Arrow -->
+        <button id="prev"
+            class="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-gray-200 shadow-md flex items-center justify-center hover:bg-gray-300">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-gray-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <!-- Right Arrow -->
+        <button id="next"
+            class="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-gray-200 shadow-md flex items-center justify-center hover:bg-gray-300">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 text-gray-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <!-- Carousel -->
+        <div class="overflow-hidden px-20">
+            <div id="slider"
+                class="flex gap-8 transition-transform duration-500 ease-in-out">
+
+                <!-- Card 1 -->
+                <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
+                    <h2 class="text-3xl text-center mb-12">Web Development</h2>
+                    <ul class="space-y-2 text-xl">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
+                    <h2 class="text-3xl text-center mb-12">UI/UX Design</h2>
+                    <ul class="space-y-2 text-xl">
+                        <li>Figma</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
+                    <h2 class="text-3xl text-center mb-12">Programming</h2>
+                    <ul class="space-y-2 text-xl">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>DSA</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
+                    <h2 class="text-3xl text-center mb-12">Database</h2>
+                    <ul class="space-y-2 text-xl">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>DBMS</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
+                    <h2 class="text-3xl text-center mb-12">Tools</h2>
+                    <ul class="space-y-2 text-xl">
+                        <li>GitHub</li>
+                        <li>VS Code</li>
+                        <li>Shopify</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    const slider = document.getElementById("slider");
+    const next = document.getElementById("next");
+    const prev = document.getElementById("prev");
+
+    let currentIndex = 0;
+    const cardWidth = 412; // 380px + gap
+
+    next.addEventListener("click", () => {
+        currentIndex++;
+        if (currentIndex > 2) currentIndex = 0;
+        slider.style.transform =
+            `translateX(-${currentIndex * cardWidth}px)`;
+    });
+
+    prev.addEventListener("click", () => {
+        currentIndex--;
+        if (currentIndex < 0) currentIndex = 2;
+        slider.style.transform =
+            `translateX(-${currentIndex * cardWidth}px)`;
+    });
+</script>
+
+</body>
+</html>
