@@ -6,19 +6,34 @@
     <title>Skill Set</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-[#F5F5F5]">
 
-<section class="py-20 overflow-hidden">
+    <nav class="flex items-center justify-between px-6 h-12 bg-[#144d56]">
+        <div class = "font-medium text-3xl text-black ">Priyakshi's Portfolio</div> 
+        <div class = "text-zinc-200" >
+            <ul class="list-none flex justify-around gap-6">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<section class="py-10 overflow-hidden">
 
     <!-- Heading -->
-    <h1 class="text-center text-6xl font-bold text-[#0E4D57] mb-20">
+    <h1 class="text-center text-4xl font-bold text-[#0E4D57] mb-20">
         SKILL SET
     </h1>
 
-    <div class="relative max-w-7xl mx-auto">
+    <div class="relative max-w-10xl mx-auto">
 
         <!-- Horizontal Line -->
-        <div class="absolute top-1/2 left-0 w-full h-[2px] bg-gray-300 -translate-y-1/2"></div>
+        <div class="absolute top-1/2 left-0 w-full h-[2px] bg-gray-300 -translate-y-1/2 z-0"></div>
 
         <!-- Left Arrow -->
         <button id="prev"
@@ -53,14 +68,14 @@
         </button>
 
         <!-- Carousel -->
-        <div class="overflow-hidden px-20">
+        <div class="overflow-hidden px-20 relative z-10 py-20">
             <div id="slider"
                 class="flex gap-8 transition-transform duration-500 ease-in-out">
 
                 <!-- Card 1 -->
                 <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
-                    <h2 class="text-3xl text-center mb-12">Web Development</h2>
-                    <ul class="space-y-2 text-xl">
+                    <h3 class="text-2xl text-center mb-12">Web Development</h3>
+                    <ul class="space-y-2 text-md">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Tailwind CSS</li>
@@ -70,8 +85,8 @@
 
                 <!-- Card 2 -->
                 <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
-                    <h2 class="text-3xl text-center mb-12">UI/UX Design</h2>
-                    <ul class="space-y-2 text-xl">
+                    <h3 class="text-2xl text-center mb-12">UI/UX Design</h3>
+                    <ul class="space-y-2 text-md">
                         <li>Figma</li>
                         <li>Wireframing</li>
                         <li>Prototyping</li>
@@ -80,8 +95,8 @@
 
                 <!-- Card 3 -->
                 <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
-                    <h2 class="text-3xl text-center mb-12">Programming</h2>
-                    <ul class="space-y-2 text-xl">
+                    <h3 class="text-2xl text-center mb-12">Programming</h3>
+                    <ul class="space-y-2 text-md">
                         <li>Java</li>
                         <li>Python</li>
                         <li>DSA</li>
@@ -90,8 +105,8 @@
 
                 <!-- Card 4 -->
                 <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
-                    <h2 class="text-3xl text-center mb-12">Database</h2>
-                    <ul class="space-y-2 text-xl">
+                    <h3 class="text-2xl text-center mb-12">Database</h3>
+                    <ul class="space-y-2 text-md">
                         <li>MySQL</li>
                         <li>MongoDB</li>
                         <li>DBMS</li>
@@ -100,8 +115,8 @@
 
                 <!-- Card 5 -->
                 <div class="min-w-[380px] h-[300px] bg-[#0E4D57] rounded-[50px] p-10 text-white">
-                    <h2 class="text-3xl text-center mb-12">Tools</h2>
-                    <ul class="space-y-2 text-xl">
+                    <h3 class="text-2xl text-center mb-12">Tools</h3>
+                    <ul class="space-y-2 text-md">
                         <li>GitHub</li>
                         <li>VS Code</li>
                         <li>Shopify</li>
@@ -110,7 +125,7 @@
 
             </div>
         </div>
-
+        
     </div>
 
 </section>
@@ -137,6 +152,62 @@
             `translateX(-${currentIndex * cardWidth}px)`;
     });
 </script>
+
+<section class="py-24 bg-[#0E4D57] flex justify-center">
+
+    <div class="w-[85%] bg-[#DDE9E7] rounded-tl-60px p-16">
+
+        <div class="grid grid-cols-2 gap-y-24 gap-x-32">
+
+            <div>
+                <h2 class="text-3xl font-bold mb-10">EDUCATION</h2>
+                <ul class="space-y-4 text-xl">
+                    <li>
+                        <div class="font-semibold">Btech in Computer Science</div>
+                        <div>Specialization : Artificial Intelligence and Machine Learning</div>
+                        <div>VIT-AP University, 2024-2028</div>
+                    </li>
+                    <li>
+                        <div class="font-semibold">Assam Higher Secondary Education Council, 2021-2023</div>
+                        <div>percentage: 84.6%</div>
+                    </li>
+                    <li>
+                        <div class="font-semibold">Assam Secondary Education Council, 2021</div>
+                        <div>percentage: 93%</div>
+                    </li>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-10">LANGUAGES KNOWN</h2>
+                <ul class="space-y-4 text-xl">
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Assamese</li>
+                    <li>Spanish</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-10">SOFT SKILLS</h2>
+                <ul class="space-y-4 text-xl">
+                    <li>Managing things</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-10">INTERESTS</h2>
+                <ul class="space-y-4 text-xl">
+                    <li>UI/UX Design</li>
+                    <li>Design trends</li>
+                    <li>Dance</li>
+            </div>
+
+        </div>
+
+    </div>
+
+</section">
+
 
 </body>
 </html>
