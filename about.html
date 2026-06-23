@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
-    <nav>
-        <div class = "left">Priyakshi's Portfolio</div>
-        <div class = "right" >
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-[#f0e2d6]">
+        <nav class="flex items-center justify-between px-6 h-12 bg-[#144d56]">
+            <div class="font-medium text-3xl text-[#f0e2d6]">Priyakshi's Portfolio</div>
+            <div class="text-[#f0e2d6]">
+                <ul class="list-none flex justify-around gap-6">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="text-red-950 text-3xl flex justify-around pl-24">About Me</h1>
+        <br><div class="grid grid-cols-2 gap-y-24 gap-x-32">
+            <div class="bg-[#144D56] py-10 rounded-r-[50px] px-10">
+                <h1 class="text-white text-2xl mb-10 py-10 px-10">What I Love</h1>
+                
+            </div>
+            <div>
+                <br><p class="text-red-950 text-lg px-10 flex justify-between">I am passionate about UI/UX design, web development, and creating engaging digital experiences. I enjoy transforming ideas into visually appealing and user-friendly products while continuously learning and exploring new technologies.</p>
+            </div>
+            <div>
+                <p class="text-red-950 text-lg py-10 px-10">I create responsive websites, design user-friendly interfaces, and develop digital solutions that balance creativity and functionality. From wireframes and prototypes to implementation, I enjoy building products that provide a seamless user experience.</p>
+            </div>
+            <div class="bg-[#144d56] py-10 rounded-l-[50px] px-10">
+                <h1 class="text-white text-2xl mb-10 py-10 px-10">What I Do</h1>
+            </div>
+            <div class="bg-[#144d56] py-10 px-10 rounded-r-[50px]">
+                <h1 class="text-white text-2xl mb-10 py-10 px-10">Achivements/ Certifications</h1>
+            </div>
+            <div>
+                <p class="text-red-950 text-lg py-10 px-10">Designed and developed an e-commerce website for an accessories brand "TAMOURA". Collaborated directly with the client to understand requirements, create UI/UX designs, and build a responsive and engaging shopping experience.<br>SIH 2025- Selected in Internal Round 1 and ranked among the Top 20 teams at VIT-AP.<br>Vitaura 2025 - was among the top 15 teams selected in internal round.</p>
+            </div>
 
-    <main class="about">
-        <section class="about-section">
-            <h2 class="text-5xl font-bold text-center">About Me</h2>
-            <p>Hello! I'm Priyakshi, a passionate frontend developer with a love for creating beautiful and functional web experiences.</p>
-            <!-- Add more content about yourself here -->
-        </section>
-    </main>
-</body>
-</html>
+
+        </div>
+    </body>
